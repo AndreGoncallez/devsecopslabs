@@ -47,3 +47,32 @@ Demonstrar como implementar pipelines automatizados seguros com ferramentas como
 │   ├── main.tf
 │   ├── variables.tf
 │   ├── scan_result.md
+```
+
+---
+
+## 🧠 Como rodar localmente
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/AndreGoncallez/devsecopslabs.git
+cd devsecopslabs/cicd-api-secure
+```
+
+Suba com Docker:
+
+```bash
+docker build -t myapi .
+docker run -p 8000:8000 myapi
+```
+
+Visualize: [http://localhost:8000](http://localhost:8000)
+
+---
+
+## 🧪 Em breve
+
+- Análise estática com SonarQube
+- Integração com Snyk CLI
+- Terraform Cloud com GCP CI
